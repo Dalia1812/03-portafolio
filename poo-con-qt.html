@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+    <!-- Comentarios -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Proyectos destacados de Dalia Rojas">
+    <title>POO con Qt Designer y MySql | Portafolio de Dalia Rojas</title>
+</head>
+<body>
+    <header>
+        <h1>Dalia Rojas</h1>
+        <p>Estudiante de Negocios Digitales</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="realidad-aumentada.html">Realidad Aumentada</a></li>
+                <li><a href="poo-con-qt.html" class="activo">POO con Qt Designer y MySql</a></li>
+                <li><a href="sobre-mi.html">Sobre mí</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Proyectos destacados</h2>
+            <p>Estos son los proyectos más representativos que he desarrollado durante mi formación académica.</p>
+            
+            <article>
+                <h2>Proyecto de POO: Concesionaria de Autos</h2>
+                <p>Publicado el <time datetime="2026-11-25">25 de noviembre de 2026</time> por Dalia</p>
+                
+                <p>Este proyecto es un sistema de gestión de ventas para una concesionaria de vehículos. Fue desarrollado utilizando el paradigma de Programación Orientada a Objetos (POO) con Python y la librería PySide6, lo que permitió crear un código modular, reutilizable y fácil de mantener. La interfaz gráfica se diseñó con Qt Designer, generando ventanas independientes para la bienvenida, el catálogo y el registro de ventas.</p>
+
+                <p>La arquitectura del sistema está dividida por clases. Por un lado, se manejan las ventanas (como <code>Concesionaria</code>, <code>Catalogo</code> y <code>Ventas</code>) y, por otro, la lógica de conexión a la base de datos. La navegación entre las ventanas se logra mediante la conexión de eventos (señales y slots) de PySide6, permitiendo al usuario moverse de forma fluida entre el menú principal, el catálogo de autos y el formulario de compra.</p>
+
+                <p>En el módulo de ventas se ingresan los datos del cliente (cédula, teléfono, correo), se selecciona el modelo del vehículo y el sistema calcula automáticamente el subtotal, el IVA y el total a pagar. Una vez confirmada la compra, los datos se envían mediante consultas SQL a una base de datos MySQL local, gestionada a través de XAMPP. De esta forma, cada transacción queda registrada permanentemente en phpMyAdmin, garantizando la persistencia de la información.</p>
+
+                <h3>Video demostrativo</h3>
+                <figure>
+                    <video src="video/demo-poo.mp4" controls width="600"></video>
+                    <figcaption>Funcionamiento completo del sistema de ventas, desde el menú hasta la base de datos.</figcaption>
+                </figure>
+
+                <h3>Capturas del proyecto</h3>
+                <div class="galeria">
+                    <figure>
+                        <img src="Imagen/foto1.png" alt="Base de datos">
+                        <figcaption>Pagina de base de datos.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="Imagen/foto2.png" alt="Qt Designer">
+                        <figcaption>Creación del diseño en Qt Designer</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="Imagen/foto3.png" alt="Conexión con Qt Designer">
+                        <figcaption>Estructura de código para conectar con Qt Designer.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="Imagen/foto4.png" alt="Activacion de base de datos">
+                        <figcaption>Activación de base de datos con XAMPP.</figcaption>
+                    </figure>
+                </div>
+                
+                <h3>Características principales</h3>
+                <ul>
+                    <li>Diseño de interfaces gráficas amigables con Qt Designer.</li>
+                    <li>Programación Orientada a Objetos (clases, herencia y encapsulamiento).</li>
+                    <li>Cálculo automatizado de subtotales, IVA y total a pagar.</li>
+                    <li>Gestión y almacenamiento de datos en MySQL a través de XAMPP.</li>
+                </ul>
+                
+                <blockquote>
+                    <p>«La programación orientada a objetos nos permite construir sistemas ordenados, reutilizables y fáciles de mantener.»</p>
+                    <p>- Dalia Rojas</p>
+                </blockquote>
+                
+            </article>
+                
+            <p><a href="index.html">← Volver al inicio</a></p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2026 Dalia Rojas. Todos los derechos reservados</p>
+        <p>Última actualización: <time datetime="2026-11-25">25 de noviembre de 2026</time></p>
+    </footer>
+</body>
+</html>

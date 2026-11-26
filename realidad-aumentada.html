@@ -15,7 +15,7 @@
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="realidad-aumentada.html" class="activo">Realidad Aumentada</a></li>
-                <li><a href="poo-con-qt.html">POO con Qt Designer</a></li>
+                <li><a href="poo-con-qt.html">POO con Qt Designer y MySql</a></li>
                 <li><a href="sobre-mi.html">Sobre mí</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
@@ -29,23 +29,38 @@
             
             <article>
                 <h2>Proyecto de Realidad Aumentada: Queso Alpina</h2>
-                <p>Publicado el <time datetime="2026-11-24">24 de noviembre de 2026</time> por Dalia</p>
+                <p>Publicado el <time datetime="2026-11-25">25 de noviembre de 2026</time> por Dalia</p>
                 
+                <p>Este proyecto consiste en una experiencia interactiva de realidad aumentada desarrollada con el motor gráfico Unity. El objetivo principal fue crear una estrategia de marketing digital que vinculara un producto físico (el queso crema Alpina) con una experiencia digital inmersiva, permitiendo al usuario interactuar con el producto de una forma totalmente nueva.</p>
+
+                <p>El funcionamiento inicia cuando el usuario escanea un código QR con la cámara de su dispositivo. Al detectar el marcador, el sistema activa el rastreo de imagen (Image Tracking) y superpone un modelo 3D realista del frasco de queso en el entorno real. La aplicación utiliza las capacidades de Unity para renderizar los gráficos 3D, manejar la iluminación y anclar el objeto a la superficie de forma estable.</p>
+
+                <p>La interacción va más allá de solo ver el objeto. Al tocar el frasco en la pantalla, se desencadenan eventos programados que reproducen una canción temática y despliegan una ficha informativa con los detalles y datos nutricionales del producto. Esto demuestra cómo la realidad aumentada puede enriquecer la experiencia de compra y proporcionar información adicional de manera atractiva y dinámica.</p>
+
+                <h3>Video demostrativo</h3>
                 <figure>
                     <video src="video/download.mp4" controls width="200"></video>
-                    <figcaption>Video demostrativo del frasco de queso Alpina en Realidad Aumentada.</figcaption>
+                    <figcaption>Demostración en vivo del escaneo del QR, el modelo 3D y la interacción táctil.</figcaption>
                 </figure>
-                
-                <p>Este proyecto consiste en una experiencia interactiva de realidad aumentada desarrollada en Unity. Al escanear un código QR con el dispositivo, se despliega un modelo 3D del frasco de queso crema Alpina. Al tocar el frasco en la pantalla, el sistema reproduce una canción y despliega una ficha con la información nutricional y detalles del producto.</p>
-                
-                <h3>Funcionamiento de la aplicación</h3>
-                <p>El sistema utiliza la cámara del celular para detectar el código QR y superponer el modelo 3D en el mundo real. La interacción táctil permite al usuario activar el audio y visualizar los datos del producto.</p>
+
+                <h3>Capturas del proyecto</h3>
+                <div class="galeria">
+                    <figure>
+                        <img src="img/foto-ra-1.png" alt="Escaneo del código QR mostrando el frasco de queso en 3D">
+                        <figcaption>Reconocimiento del QR y visualización del modelo 3D.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/foto-ra-2.png" alt="Ficha informativa del producto desplegada en la pantalla">
+                        <figcaption>Interfaz con la información nutricional del producto.</figcaption>
+                    </figure>
+                </div>
                 
                 <h3>Características principales</h3>
                 <ul>
-                    <li>Reconocimiento del código QR mediante la cámara.</li>
-                    <li>Visualización del frasco de queso en 3D con Unity.</li>
-                    <li>Reproducción de audio y muestra de información al tocar el modelo.</li>
+                    <li>Reconocimiento de imagen y rastreo del código QR mediante la cámara.</li>
+                    <li>Renderizado 3D del producto con texturas y luces realistas en Unity.</li>
+                    <li>Interacción táctil: reproducción de audio y despliegue de información al tocar el modelo.</li>
+                    <li>Integración de elementos multimedia (audio, texto e imagen) en un solo entorno.</li>
                 </ul>
                 
                 <blockquote>
