@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+    <!-- Comentarios -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog personal de [nombre] sobre [tema]">
+    <title>Contacto | Portafolio de Dalia</title>
+</head>
+<body>
+    <header>
+        <h1>Portafolio de Dalia</h1>
+        <p>Estudiante de Negocios Digitales</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="realidad-aumentada.html">Realidad Aumentada</a></li>
+                <li><a href="poo-con-qt.html">POO con Qt Designer y MySql</a></li>
+                <li><a href="sobre-mi.html">Sobre mí</a></li>
+                <li><a href="contacto.html" class="activo">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="pagina-simple">
+            <h2>Contacto</h2>
+            <p>¿Tienes una pregunta, una propuesta o quieres colaborar conmigo? Escríbeme y te responderé lo antes posible.</p>
+            
+            <form action="#" method="post">
+                <p>
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text" id="nombre" name="nombre" required>
+                </p>
+                <p>
+                    <label for="correo">Correo electrónico:</label><br>
+                    <input type="email" id="correo" name="correo" required>
+                </p>
+                <p>
+                    <label for="asunto">Asunto:</label><br>
+                    <select id="asunto" name="asunto">
+                        <option>Consulta</option>
+                        <option>Colaboración</option>
+                        <option>Oportunidad laboral</option>
+                        <option>Otro</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="mensaje">Mensaje:</label><br>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                </p>
+                <p><button type="submit">Enviar mensaje</button></p>
+            </form>
+            
+            <p><a href="index.html">← Volver al inicio</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Dalia. Todos los derechos reservados</p>
+        <p>Última actualización: <time datetime="2026-11-05">05 de octubre de 2026</time></p>
+    </footer>
+</body>
+</html>
