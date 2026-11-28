@@ -1,0 +1,243 @@
+/* Hoja de estilos del blog personal */
+/* Importar dos fonts para google. Inter para el texto y Poppins para títulos*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap");
+/* Crear variables*/
+:root{
+    /* Colores */
+    --color-primario: #b586b5;         /* Malva pastel */
+    --color-primario-oscuro: #8e658e;  /* Malva oscuro para hover */
+    --color-fondo: #faf5fa;            /* Blanco con un tinte rosado/malva muy sutil */
+    --color-superficie: #ffffff;       /* Blanco puro para las tarjetas */
+    --color-texto: #3d2c3d;            /* Ciruela oscuro para el texto principal */
+    --color-texto-suave: #7a647a;      /* Malva suave para textos secundarios */
+    --color-borde: #ecdcec; 
+    /* Tipografía */
+    --fuente-texto: "Inter", system-ui, sans-serif;
+    --fuente-titulos: "Poppins", system-ui, sans-serif;
+    /* Medidas*/
+    --ancho-contenido: 960px;
+    /* Tarjetas*/
+    --radio: 12px;
+    --sombra: 0 2px 8px rgba(0, 0, 0, 0.8);
+    --sombra-fuerte: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+/*correccion del calculo del tamaño de las cajas(box)*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+/*estilo para todo el body*/
+body {
+    /*background-color: #f4f6f8;*/
+    background-color:var(--color-fondo);
+    color: var(--color-texto);
+    margin: 0;
+    font-family: var(--fuente-texto);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+/* estilos para el titulo */
+h1,h2,h3{
+    font-family: var(--fuente-titulos);
+    color: var(--color-texto);
+    line-height: 1.2;
+}
+h1{
+    font-size: 2.5rem;
+}
+h2{
+    font-size: 1.75rem;
+}
+h3{
+    font-size: 1.25rem;
+}
+/* estilos a los enlaces */
+a {
+    color: var(--color-primario);
+    text-decoration: none;
+    font-weight: 600;
+}
+a:hover {
+    color: var(--color-primario-oscuro);
+    text-decoration: underline;
+}
+/*contenido*/
+main{
+    max-width: var(--ancho-contenido);
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    /*border: 2px dashed var(--color-primario);*/
+}
+/*encabezados*/
+header {
+    background: linear-gradient(135deg, var(--color-primario), var(--color-primario-oscuro));
+    color: #fff;
+    text-align: center;
+    padding: 3rem 1.5rem 1.5rem;
+}
+header h1{
+    color: #fff;
+    margin: 0 0 0.5rem;
+}
+header p{
+    margin: 0 0 1.5rem;
+    opacity: 0.9;
+}
+/*menu*/
+nav ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/*menu convertir a los enlaces botones*/
+nav a{
+    display: block;
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    color: #fff;
+    transition: background--color 0.2s;
+}
+nav a:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    text-decoration: none;
+}
+nav a.activo{
+    background-color: #fff;
+    color: var(--color-primario);
+}
+/*tarjetas*/
+.tarjetas{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    gap: 1.5rem;
+}
+.tarjeta{
+    background-color: var(--color-superficie);
+    border: 1px solid var(--color-borde);
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+    padding: 1.5rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+}
+.tarjeta h3{
+    margin-top: 0;
+}
+.tarjeta time{
+    color: var(--color-texto-suave);
+    font-size: 0.875rem;
+}
+.tarjeta:hover{
+    transform: translateY(-4px);
+    box-shadow: var(--sombra-fuerte);
+}
+.tarjeta .boton{
+    margin-top: auto;
+    align-self: flex-start;
+}
+.boton{
+    display: inline-block;
+    background-color: var(--color-primario);
+    color: #fff;
+    padding: 0.6rem 1.25rem;
+    border-radius: 999px;
+    transition: background-color 0.2s;
+}
+.boton:hover{
+    background-color: var(--color-primario-oscuro);
+    color: #fff;
+    text-decoration: none;
+}
+main > article{
+    background-color: var(--color-superficie);
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+    padding: 2rem;
+}
+main > article > h2{
+    margin-top: 0;
+}
+/*Imagenes responsive*/
+img{
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radio);
+    display: block;
+    margin: 0 auto;
+}
+video {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radio);
+    display: block;
+    margin: 0 auto;
+}
+figure{
+    margin: 1.5rem 0;
+}
+figcaption{
+    margin-top: 0.5rem;
+    color: var(--color-texto-suave);
+    font-size: 0.875rem;
+    text-align: center;
+}
+blockquote{
+    margin: 1.5rem 0;
+    padding: 1rem 1.5rem;
+    background-color: var(--color-fondo);
+    border-left: 4px solid var(--color-primario);
+    border-radius: 0 var(--radio) var(--radio) 0;
+    font-style: italic;
+}
+blockquote p{
+    margin: 0.25rem 0;
+}
+/*tabla*/
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+}
+th, td{
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--color-borde);
+}
+thead th{
+    background-color: var(--color-primario);
+    color: #fff;
+}
+caption{
+    caption-side: top;
+    padding-bottom: 0.75rem;
+    font-weight: 600;
+    text-align: left;
+}
+tbody td:hover{
+    background-color: var(--color-fondo);
+}
+.pagina-simple{
+    background-color: var(--color-superficie);
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+    padding: 2rem;
+}
+.galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 columnas iguales */
+    gap: 1rem; /* Espacio entre fotos */
+}
+
+.galeria img {
+    width: 100%;
+    height: 250px; /* Todas tendrán la misma altura */
+    object-fit: cover; /* Se adaptan sin deformarse */
+    border-radius: var(--radio);
+}
